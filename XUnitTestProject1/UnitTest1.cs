@@ -12,17 +12,11 @@ namespace XUnitTestProject1
         {
             //Arrange
             var fb = new FizzBuzz(15);
-            //act
+            //Act
             ArrayList testArray = fb.getFizzBuzz();
-            //assert
+            //Assert
             Assert.Equal("FizzBuzz", testArray[14]);
-            //write a test in xunit
-            // to check for the 15th case where it prints fizz buzz
-            // when it runs to 15th term its gonna print fizzbuzz
-
-            //any other unit tests i think are appropiate
-
-            //upload to github then send link to rayne.
+            
         }
 
        [Fact]
@@ -30,9 +24,9 @@ namespace XUnitTestProject1
         {
             //Arrange
             var fb = new FizzBuzz();
-            //act
+            //Act
             ArrayList testArray = fb.getFizzBuzz();
-            //assert
+            //Assert
             Assert.Equal("", testArray[0]);
         }
 
@@ -132,11 +126,9 @@ namespace XUnitTestProject1
             int upBound = -1;
 
             //Act
-
             var fb = new FizzBuzz(upBound);
 
             //Assert
-
             Assert.NotEqual(upBound, fb.getUpperBound());
         }
     }
